@@ -1,0 +1,335 @@
+/*Réglage du style de base de la page*/
+body {
+    font-family: 'Raleway', serif;
+    font-size: 2em;
+    background-image: linear-gradient(#fafafa, rgb(233, 232, 232));
+    margin: 0px;
+  }
+/*Réglage du style de base des liens*/
+a:link {
+    text-decoration: none;
+    color: blue;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+a:visited {
+    text-decoration: none;
+    color: rgb(112, 1, 112);
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+a:hover {
+    text-decoration: none;
+    color: gray;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+
+a:active {
+    text-decoration: none;
+    color: blue;
+    transition-property: color;
+    transition-duration: 0.5s;
+}
+/*Réglage du style du titre "Bouli" situé au sommet de la page index*/
+.bouli{
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 35px;
+    letter-spacing: 2.8px;
+    color: #000000;
+    font-weight: 400;
+    text-align: center;  
+}
+
+/*La classe centre permet de centrer une image et d'y ajouter un effet d'animation lorsque l'on passe la souris dessus*/
+.CentreImageAnim{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(0deg);
+    transition-duration: 1s;  
+}
+
+.CentreImageAnim:hover{ 
+    transform: rotate(360deg);
+    transition-duration: 1s; 
+}
+
+/*Ces deux idx permetent de régler la police, sa taille et et centrer le texte. Elles sont utilisés pour les deux sitations étant
+dans la page index ainsi que dans la page album. */
+#quote{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1em;
+    text-align: center;
+}
+ 
+#quotesombre{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 1em;
+    text-align: center;
+    color: #ececec;
+}
+
+/*Cette classe permet de régler le style des titres étant présent dans la page index.*/
+.titre{
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1em;
+    text-align: center;
+}
+/*permet de centrer avec une légère marge tout type de contenu étant présent dans la balise article*/ 
+article{
+    text-align: center;
+    margin: 30px;
+    padding: 10px;
+}
+/*Permet de disposer les liens du menu de navigation sur une seule ligne*/
+#liste li{
+    display: inline;
+}
+/* Défini le style du menu de navigation*/
+nav{
+    display:flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0.1em;
+    background-color: rgb(226, 226, 226);
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+    z-index: 1; 
+}
+/*Défini l'arière plan du nav en sombre*/
+#sombre{
+    background-color: rgb(27, 27, 27);
+}
+/*défini le style et l'emplacement du texte "bouli" étant présent dans la barre de navigation.*/
+#texte{
+    justify-content: center;
+    align-self: flex-start;
+    order: 0;
+    color: rgb(39, 39, 39);
+    margin: 35px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 35px;
+    letter-spacing: 2.8px;
+}
+/*Fait la même chose mais en mode sombre*/
+#textesombre{
+    justify-content: center;
+    align-self: flex-start;
+    order: 0;
+    color: rgb(221, 221, 221);
+    margin: 35px;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 35px;
+    letter-spacing: 2.8px;
+}
+/*Règle la position et le style des liens étant présent dans la barre de navigation*/
+.menu a{   
+    align-self: flex-end;
+    color: rgb(39, 39, 39);
+    padding: 14px 16px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 28px;
+    transition-property: background-color;
+    transition-duration: 0.3s; 
+}
+/*De même mais en sombre*/
+.menusombre a{   
+    align-self: flex-end;
+    color: rgb(221, 221, 221);
+    padding: 14px 16px;
+    margin: 10px;
+    text-decoration: none;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 28px;
+    transition-property: background-color;
+    transition-duration: 0.3s;  
+}
+/*Fait changer la couleur du l'arière plan des liens via un léger fondu lorsque l'on passe la souris dessus*/
+.menu a:hover{
+    background-color: rgb(209, 209, 209);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+/*Pareil mais en mode sombre*/
+.menusombre a:hover{
+    background-color: rgb(32, 32, 32);
+    transition-property: background-color;
+    transition-duration: 0.3s;
+}
+/*Défini l'affichage des 3 images étant en bas de la page index sur flex*/
+#conteneur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/*Met les images en arière plan*/
+.element{
+    transform: scale(1,1);
+    transition-duration: 0.5s;
+    z-index: 0;
+}
+/*joue une petite animation lorsque l'on passe la souris sur une des trois images*/
+.element:hover{ 
+    transform: scale(1.3,1.3);
+    transition-duration: 0.5s;  
+}
+/*Règle le style du footer, il est situé en bas de chaques pages*/
+footer{
+    text-align: center;
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0.1em;
+    background-color: rgb(226, 226, 226);
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 22px;
+    color: rgb(80, 80, 80);
+}
+/*Même style mais en mode sombre*/
+#footersombre{
+    text-align: center;
+    list-style-type: none;
+    margin-top: 20px;
+    padding: 0.1em;
+    background-color: rgb(27, 27, 27);
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 22px;
+    color: rgb(194, 194, 194);
+}
+/*Règle la position et le style de la liste contenant les noms des musiques*/
+#musiques{
+   text-align: left;
+   float: left;
+   list-style-type: circle; 
+   margin-top: 80px; 
+}
+/*Règle la possition de n'importe quel élément étant dans la balise aside*/
+aside{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+/*Permet de centrer une image*/
+#photo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Permet de mettre un arière plan sombre*/
+#noir{
+    background-image: linear-gradient(black,rgb(19, 19, 19));
+}
+/*Règle le style du titre "Frisk" étant présent au début de la page album*/
+#frisk{
+    text-align: center;
+    font-family: "Lucida Console", Monaco, monospace;
+    font-size: 90px;
+    letter-spacing: 55px;
+    color: #e9e9e9;
+    margin-left: 50px;
+}
+/*permet de mettre le texte en sombre*/
+.textesombre{
+    font-family: 'Raleway', sans-serif;
+    color: #ececec; 
+}
+
+/*Permet de créer 3 colonnes se collant l'une à coté de l'autre*/
+.colonne {
+    float: left;
+    width: 33.33%;
+    font-family: 'Raleway', sans-serif;
+    color: #ececec; 
+    text-align: center;
+    font-size: 30px;
+  }
+  
+  /*permet d'éviter que le footer "mange" les colonnes*/
+  .ligne:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /*Pour que la page soit responsive, fait en sorte que les colonnes ne soit plus cote à cote*/
+  @media (max-width: 900px) {
+    .colonne{
+      width: 100%;
+    }
+  }
+/*Pour que la page soit responsive centre les éléments*/
+  @media (max-width: 1100px) {
+    #liste li{
+    display: block;
+    text-align: center;
+    }
+
+    #texte{
+        display: block;
+        text-align: center;
+        margin: 10px; 
+    }
+
+    #textesombre{
+        display: block;
+        text-align: center;
+        margin: 10px; 
+    }
+
+    .menu a{   
+        text-align: center;
+        margin-right: 50px;
+        text-decoration: none;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 28px;
+        transition-property: background-color;
+        transition-duration: 0.3s; 
+    }
+
+    .menusombre a{   
+        text-align: center;
+        margin-right: 50px;
+        text-decoration: none;
+        font-family: "Lucida Console", Monaco, monospace;
+        font-size: 28px;
+        transition-property: background-color;
+        transition-duration: 0.3s;  
+    }
+
+    nav{
+        display: block;
+        list-style-type: none;
+        margin-top: 20px;
+        padding: 0.1em;
+        background-color: rgb(226, 226, 226);
+        position: sticky;
+        top: 0;
+        margin-bottom: 30px;
+        z-index: 1;  
+    }
+
+    aside{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+    }
+
+    #musiques{
+        text-align: center;
+        float: none;
+        list-style-type: none; 
+        margin-top: 60px; 
+        margin-right: 50px
+    }
+    #frisk{
+        letter-spacing: 30px;
+    }
+  }

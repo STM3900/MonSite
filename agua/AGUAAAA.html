@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="oskour.css">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="shortcut icon" href="icone.png">
+    <title>AGUAAAA</title>
+</head>
+<body>
+    <section>
+        <article id="a" onmouseover="PlaySound('mySound1')" onmouseout="StopSound('mySound1')">
+            <p>AGUAAA</p>
+            <audio id='mySound1' src='audio/aguaaa.mp3'>
+        </article>
+        <article id="b" onmouseover="PlaySound('mySound2')" onmouseout="StopSound('mySound2')">
+            <p>T'ES</p>
+            <audio id='mySound2' src='audio/t.mp3'>
+        </article>
+        <article id="c" onmouseover="PlaySound('mySound3')" onmouseout="StopSound('mySound3')">
+            <p>GÉNIALEEEE</p>
+            <audio id='mySound3' src='audio/géniale.mp3'>
+        </article>
+    </section>
+</body>
+    <script>
+        function PlaySound(soundobj) {
+    var thissound=document.getElementById(soundobj);
+        thissound.play();
+    }
+
+    function StopSound(soundobj) {
+        var thissound=document.getElementById(soundobj);
+        thissound.pause();
+        thissound.currentTime = 0;
+    }
+    </script>
+</html>
