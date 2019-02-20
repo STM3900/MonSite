@@ -322,3 +322,116 @@ embed{
     75% {opacity: 0;}
     100% {opacity: 1;}
   }
+
+  @media screen and (max-width: 1000px) {
+    #sitegroupe{
+      flex-direction: column;
+    }
+
+    #sitegroupe div{
+      width: 100%;
+    }
+
+    .tamer{
+      margin-left: 0px;
+  }
+    #sitegroupe p{
+        font-family: 'B612 Mono', monospace;
+        font-size: 25px;
+        text-align: center;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+    
+    #sitegroupe ul{
+        font-family: 'B612 Mono', monospace;
+        font-size: 25px;
+        margin-top: 30px;
+        margin-left: 0px;
+        text-align: center;
+        list-style: none;
+    }
+    
+    #sitegroupe img{
+        display: flex;
+        height: 250px;
+        margin-right: auto;
+        margin-left: auto;
+        transform: scale(1);
+        transition: 0.3s;
+    }
+    
+    #sitegroupe img:hover{
+        transform: scale(1.1);
+        transition: 0.3;    
+    }
+    
+    #textetitre a{
+        color: #141414;
+        text-decoration: none;
+        text-align: center;
+        transition: color 0.3s, margin-left 0.3s;
+    }
+    
+    #textetitre a:hover{
+        color: #4b577a;
+        margin-left: -10px;
+        transition: color 0.3s, margin-left 0.3s;
+    }
+
+    #textetitre{
+        font-family: 'Julius Sans One', sans-serif;
+        color: #141414;
+        font-size: 50px;
+        margin-left: 100px;
+        margin-right: 100px;
+        text-align: center;
+    }
+
+
+    #sites{
+      background-color: #173753;
+      text-align: center;
+      color:white;
+      font-size: 50px;
+      font-family: 'Julius Sans One', sans-serif;
+  
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+      z-index: -1;
+  
+     /* position: sticky;
+      top: 0;*/
+  }
+  
+  #sites p{
+      font-size: 40px;
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      width: 100%;
+  }
+  
+  
+  #site{
+      border-bottom: rgba(255, 255, 255, 0) solid 3px;
+      transition: border-bottom 0.3s;
+      margin-right: 50px;
+      margin-left: 50px;
+  }
+  
+  #site:hover{
+      border-bottom: white solid 3px;
+      transition: border-bottom 0.3s;
+  }
+  
+  #site img{
+      height: 85px;
+  }
+  
+  #site img:hover{
+      cursor: pointer;
+  }
+  }
