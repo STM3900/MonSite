@@ -62,6 +62,24 @@ a:active {
     color: rgb(248, 248, 248);
 }
 
+#presentation a{
+  margin-top: 100px;  
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  text-align: justify;
+  margin-left: 100px;
+  margin-right: 100px;
+  color: rgb(248, 248, 248);
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+#presentation a:hover{
+  margin-left: 110px;
+  color: #b1d2f1;
+  cursor: pointer;
+}
+
 #sites{
     background-color: #173753;
     text-align: center;
@@ -258,7 +276,6 @@ embed{
   padding-top: 25px;
   padding-bottom: 25px;
   background-color: #385e80;
-
 }
 
 #wakatime section{
@@ -269,6 +286,30 @@ embed{
 #wakatimeimage{
   border: solid 8px white;
   border-radius: 25px;
+}
+
+#contact{
+  color: #385e80;
+  font-size: 40px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#contact article{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+
+#contact img{
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+#contact img:hover{
+  transform: scale(1.1);
 }
 
 ::-webkit-scrollbar {
@@ -424,5 +465,14 @@ embed{
   
     embed{
       max-width: 100%;
+    }
+
+    #contact p{
+      text-align: center;
+      width: 100%;
+    }
+
+    #contact{
+      padding-bottom: 10%;
     }
   }

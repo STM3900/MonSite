@@ -73,25 +73,20 @@
             <p>Je m'appelle Théo, j'ai 18 ans et je suis en première année à L'Epsi ! <br> Je suis passionné par tout ce qui touche à
             l'informatique et particulièrement par le web, où je m'amuse à concevoir des sites avec de plus en plus de fonctionnalités ! <br><br>
             Le site est toujours en construction, de nouvelles sections seront ajoutées d'ici peu !</p>
+            <a id="gotoContact">> Contact</a>
         </section>
         </div>
         <div id="customTabs" class="tabs">
             <section id="sites" class="tab-nav">
                 <p>Mes sites :</p>
                 <article id="site">
-                    <a href="#tab-myTab"><img src="Images/owo.png" alt=""></a>
+                    <a href="#tab-myTab"><img src="Images/StarLightLogo.png" alt=""></a>
                 </article>
                 <article id="site">
-                    <a href="#tab-mySecondTab"><img src="Images/icones/TEMALogo.png" alt=""></a>
+                    <a href="#tab-mySecondTab"><img src="Images/owo.png" alt=""></a>
                 </article>
                 <article id="site">
-                    <a href="#tab-my3Tab"><img src="Images/cerise.png" alt=""></a>
-                </article>
-                <article id="site">
-                    <a href="#tab-my4Tab"><img src="Images/icones/deltarune.png" alt=""></a>
-                </article>
-                <article id="site">
-                    <a href="#tab-my5Tab"><img src="Images/bouli.gif" alt=""></a>
+                    <a href="#tab-my3Tab"><img src="Images/icones/TEMALogo.png" alt=""></a>
                 </article>
             </section>
             <main>
@@ -102,7 +97,7 @@
                             <a href="http://cc-c-t-o.000webhostapp.com/StarLight/index.html"><img src="Images/StarLightLogoNoir.png" alt=""></a>
                         </div>
                         <div class="tamer">
-                            <p>Découvrez les secrets de l'univers de Starlight et de l'organisation gardienne de l'univers Karma. <br> Suivez l'aventure de Théo, Onyx, Faydon et plein d'autres personnages uniques. <br> Laissez vous emporter dans ce monde vivant et vaste. <br>
+                            <p>Découvrez les secrets de l'univers de Starlight et de l'organisation gardienne de l'univers Karma. <br> Laissez vous emporter dans ce monde vivant et vaste. <br>
                                 Détendez vous et respirez. <br>
                                 Après tout, les étoiles sont plus belles les yeux fermées.</p>
                             <ul>
@@ -141,36 +136,6 @@
                                     <li>Connecté à une base de donnée, permettant la création de compte</li>
                                 </ul>
                             </div>
-                        </article>
-                </div>
-                <div id="tab-my4Tab" class="tab-content">
-                    <p id="textetitre"><a href="fdb/bouli.html">< Fanpage de bouli /></a></p>
-                    <article id="sitegroupe">
-                            <div>
-                                <a href="fdb/bouli.html"><img src="Images/bouli.gif" alt=""></a>
-                            </div>
-                            <div class="tamer">
-                                <p>Mon tout premier site ! Dédié à une entité musicale fictive : Bouli</p>
-                                <ul>
-                                    <li>Intégration d'une vidéo youtube</li>
-                                    <li>Expérimentations de diverses fonctionnalités du css comme les flexbox ainsi que les transitions</li>
-                                </ul>
-                            </div>
-                        </article>
-                </div>
-                <div id="tab-my5Tab" class="tab-content">
-                <p id="textetitre"><a href="fdb/bouli.html">< Fanpage de bouli /></a></p>
-                <article id="sitegroupe">
-                        <div>
-                            <a href="fdb/bouli.html"><img src="Images/bouli.gif" alt=""></a>
-                        </div>
-                        <div class="tamer">
-                            <p>Mon tout premier site ! Dédié à une entité musicale fictive : Bouli</p>
-                            <ul>
-                                <li>Intégration d'une vidéo youtube</li>
-                                <li>Expérimentations de diverses fonctionnalités du css comme les flexbox ainsi que les transitions</li>
-                            </ul>
-                        </div>
                     </article>
                 </div>
             </main>
@@ -178,10 +143,29 @@
         <section id=wakatime>
         <figure><embed id="wakatimeimage" src="https://wakatime.com/share/@e899580e-fa64-43b1-b7da-112ac2579f6f/09ebda05-ad4e-4d80-b2cf-313f74027bf4.svg"></embed></figure>
         </section> 
+        <section id="contact">
+            <article id="contactancre">
+                <p>Contact :</p>
+                <a href="https://www.linkedin.com/in/theo-migeat/" title="Mon profil Linkedin"> <img src="Images/icones/linkedin.svg" alt=""></a>
+                <a href="mailto:theo.migeat@epsi.fr" title="Mon adresse email"> <img src="Images/icones/gmail.svg" alt=""></a>
+                <a href="https://github.com/STM3900" title="Mon GitHub"> <img src="Images/icones/github.svg" alt=""></a>
+            </article>
+        </section>
     <footer>
         <p><span id="groscopy">©</span> Fait avec ❤ par <a href="">Théo</a> !</p>
     </footer>
 </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function (){
+            $("#gotoContact").click(function (){
+                $('html, body').animate({
+                    scrollTop: $("#contactancre").offset().top
+                }, 1500);
+            });
+        });
+    </script>
 
     <script>
                 function tabs(selector) {
